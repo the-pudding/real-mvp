@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang='en' data-version='1570507347354'>
+
+<head>
+
+	<title>Title Case Hed Goes Here</title>
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+	<meta name='description' content='Sentence case dek goes down here. Modify these in data/meta.json.' />
+	<meta name='news_keywords' content='tk' />
+	
+	<meta property='og:title' content='Title Case Hed Goes Here' />
+	<meta property='og:site_name' content='The Pudding' />
+	<meta property='og:url' content='https://pudding.cool/year/month/name/' />
+	<meta property='og:description' content='Sentence case dek goes down here. Modify these in data/meta.json.' />
+	<meta property='og:type' content='article' />
+	<meta property='og:locale' content='en_US' />
+	
+	<meta property='og:image' content='https://pudding.cool/year/month/name/assets/social/social-facebook.jpg' />
+	<meta property='og:image:type' content='image/jpeg' />
+	<meta property='og:image:width' content='1200' />
+	<meta property='og:image:height' content='600' />
+	
+	<meta name='twitter:card' content='summary_large_image' />
+	<meta name='twitter:site' content='https://pudding.cool' />
+	<meta name='twitter:creator' content='@puddingviz' />
+	<meta name='twitter:title' content='Title Case Hed Goes Here' />
+	<meta name='twitter:description' content='Sentence case dek goes down here. Modify these in data/meta.json.' />
+	<meta name='twitter:image:src' content='https://pudding.cool/year/month/name/assets/social/social-twitter.jpg' />
+	
+	<link rel='canonical' href='https://pudding.cool/year/month/name/' />
+	
+	<link rel='apple-touch-icon' sizes='180x180' href='https://pudding.cool/apple-touch-icon.png'>
+	<link rel='icon' type='image/png' sizes='32x32' href='https://pudding.cool/favicon-32x32.png'>
+	<link rel='icon' type='image/png' sizes='16x16' href='https://pudding.cool/favicon-16x16.png'>
+	<link rel='manifest' href='https://pudding.cool/site.webmanifest'>
+	<link rel='mask-icon' href='https://pudding.cool/safari-pinned-tab.svg' color='#5bbad5'>
+	<meta name='msapplication-TileColor' content='#ffc40d'>
+	<meta name='theme-color' content='#ffffff'>
+	<link rel='preload' type='font/woff2' as='font' crossorigin
+		href='https://pudding.cool/assets/fonts/national/National2Web-Regular.woff2'>
+	<link rel='preload' type='font/woff2' as='font' crossorigin
+		href='https://pudding.cool/assets/fonts/national/National2Web-Bold.woff2'>
+	<link rel='preload' type='font/woff2' as='font' crossorigin
+		href='https://pudding.cool/assets/fonts/national/National2NarrowWeb-Regular.woff2'>
+	<link rel='preload' type='font/woff2' as='font' crossorigin
+		href='https://pudding.cool/assets/fonts/national/National2NarrowWeb-Bold.woff2'>
+	<link rel='preload' type='font/woff2' as='font' crossorigin
+		href='https://pudding.cool/assets/fonts/tiempos/TiemposTextWeb-Regular.woff2'>
+	<link rel='preload' type='font/woff2' as='font' crossorigin
+		href='https://pudding.cool/assets/fonts/tiempos/TiemposTextWeb-Bold.woff2'>
+
+	<style>*{box-sizing:border-box}html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}a img{border:none}blockquote{quotes:none}blockquote:before,blockquote:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}caption,th,td{text-align:left;font-weight:normal;vertical-align:middle}.xxx-small{font-size:10px;line-height:1.65}.xx-small{font-size:11px;line-height:1.65}.x-small{font-size:12px;line-height:1.65}.small{font-size:14px;line-height:1.65}.root{font-size:16px;line-height:1.65}.medium{font-size:18px;line-height:1.65}.large{font-size:20px;line-height:1.5}.x-large{font-size:24px;line-height:1.4}.xx-large{font-size:32px;line-height:1.4}.xxx-large{font-size:40px;line-height:1.4}.xxxx-large{font-size:48px;line-height:1.2}.xxxxx-large{font-size:64px;line-height:1.2}.hide-accessible{width:1px;height:1px;overflow:hidden;position:absolute}.hide-invisible{visibility:hidden}.hide-display{display:none}.skip-to-main{border:none;width:1px;height:1px;overflow:hidden;position:absolute}.skip-to-main:focus{width:auto;height:auto;background-color:#f4f4f4;padding:.5rem;z-index:1000}.prose{max-width:40rem;margin:0 auto;padding:0 1rem}.media-overlay{position:absolute;top:0;left:0;width:100%;height:100%;background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyNpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChNYWNpbnRvc2gpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkRDMDBGQ0Y5NEI4NjExRTM5RTg2QTY1RTUyQjIxNEQyIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkRDMDBGQ0ZBNEI4NjExRTM5RTg2QTY1RTUyQjIxNEQyIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6REMwMEZDRjc0Qjg2MTFFMzlFODZBNjVFNTJCMjE0RDIiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6REMwMEZDRjg0Qjg2MTFFMzlFODZBNjVFNTJCMjE0RDIiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6C0EmkAAAAGElEQVR42mJiYGD4DwQMTECCEchhAAgwAEcGBv9dngKPAAAAAElFTkSuQmCC")}#starter-guide{max-width:40rem;margin:0 auto}body{font-feature-settings:'kern' 1,'onum' 0,'liga' 0,'tnum' 1;-webkit-font-smoothing:antialiased;-webkit-tap-highlight-color:rgba(0,0,0,0);background-color:#fff;color:#282828;font-weight:500;font-family:'Tiempos Text Web',Georgia,Times,serif;font-size:16px}@media only screen and (min-width:30em){body{font-size:18px}}h1{font-size:32px;line-height:1.4;margin-top:1.5rem}h2{font-size:24px;line-height:1.4;margin-top:1.5rem}h3{font-size:20px;line-height:1.5;margin-top:1.5rem}h4{font-size:18px;line-height:1.65;margin-top:1.5rem}h5{font-size:16px;line-height:1.65;margin-top:1.5rem}h6{font-size:14px;line-height:1.65;margin-top:1.5rem}p{margin:1.5rem 0;font-size:16px;line-height:1.65}@media only screen and (min-width:30em){p{font-size:18px;line-height:1.65}}a{text-decoration:none;border-bottom:1px solid #282828;color:#282828}a:visited,a:hover{color:#282828}strong,b{font-weight:700}em,i{font-style:italic}ul{list-style-type:none}li{font-size:16px}@media only screen and (min-width:30em){li{font-size:18px}}img,video{display:block;width:100%}button{cursor:pointer;border:none;outline:none;margin:0;padding:0;font-size:16px}@media only screen and (min-width:30em){button{font-size:18px}}sub,sup{font-size:.75rem;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}footer.pudding-footer{padding:3rem 1rem;border-top:4px solid #000;font-family:'National 2 Web',Helvetica,Arial,sans-serif;margin-top:3rem}footer.pudding-footer .footer-recirc{max-width:65rem;margin:0 auto}footer.pudding-footer .footer-recirc__articles{display:flex;flex-wrap:wrap;justify-content:space-between}footer.pudding-footer .footer-recirc__article{display:block;width:100%;border:none;margin-bottom:2rem}@media only screen and (min-width:50em){footer.pudding-footer .footer-recirc__article{width:calc(25% - 1.5rem);margin-right:1.5rem}footer.pudding-footer .footer-recirc__article:last-of-type{margin-right:0}}footer.pudding-footer .footer-recirc .article__headline{font-family:'National 2 Narrow Web',Helvetica,Arial,sans-serif;font-size:20px;line-height:1;font-weight:700;padding-left:.5rem}footer.pudding-footer .footer-company{margin:0 auto;margin-top:3rem;max-width:65rem;display:flex;flex-direction:column;font-family:'National 2 Narrow Web',Helvetica,Arial,sans-serif}@media only screen and (min-width:50em){footer.pudding-footer .footer-company{flex-direction:row}}footer.pudding-footer .footer-company__cta{order:1;margin:2rem 0 0 0;width:100%}@media only screen and (min-width:50em){footer.pudding-footer .footer-company__cta{width:22rem;margin:0 0 0 2rem}}footer.pudding-footer .footer-company__cta-list{display:flex;flex-wrap:wrap;flex-direction:column;height:12rem}@media only screen and (min-width:50em){footer.pudding-footer .footer-company__cta-list{flex-direction:column}}footer.pudding-footer .footer-company__cta-list li{display:flex;width:50%;margin-bottom:1rem;align-items:center}@media only screen and (min-width:50em){footer.pudding-footer .footer-company__cta-list li{padding-left:1rem}}footer.pudding-footer .footer-company__cta-list li a{display:flex;border:none}footer.pudding-footer .footer-company__cta-list li p{font-family:'National 2 Narrow Web',Helvetica,Arial,sans-serif;margin:0;padding-left:.5rem;padding-top:.1rem;line-height:1;color:#949494}@media only screen and (min-width:40em){footer.pudding-footer .footer-company__cta-list li p{font-size:20px}}footer.pudding-footer .footer-company__cta-list li svg{fill:#949494;stroke:none;vertical-align:middle}footer.pudding-footer .footer-company__cta-list li svg circle,footer.pudding-footer .footer-company__cta-list li svg polyline,footer.pudding-footer .footer-company__cta-list li svg line{fill:none;stroke:#949494}footer.pudding-footer .footer-company__cta-list li .feather-mail path,footer.pudding-footer .footer-company__cta-list li .feather-lock path,footer.pudding-footer .footer-company__cta-list li .feather-rss path{stroke:#949494;fill:none}footer.pudding-footer .footer-company__about{order:0;width:100%;color:#949494;display:flex;flex-direction:column}@media only screen and (min-width:50em){footer.pudding-footer .footer-company__about{width:calc(100% - 24rem)}}footer.pudding-footer .footer-company__about p{margin:0;font-size:16px;line-height:1.4}footer.pudding-footer .footer-company__about svg{width:12rem;margin-bottom:.5rem}header{z-index:1000;position:absolute;top:0;left:0;width:100%;background-color:#fff;font-family:'National 2 Web',Helvetica,Arial,sans-serif}header a.logo{display:block;border:none;max-width:9rem;margin:1rem auto}header a.logo svg{fill:#282828;display:block;width:100%}header.is-sticky{position:fixed;transform:translate3d(0,0,0);background-color:#fff;box-shadow:0 0 7px 1px #c9c9c9;height:3rem;display:flex;align-items:center}header.is-sticky a.logo{margin:0 auto}header.is-sticky .header__toggle{position:fixed;transform:translate3d(0,0,0);top:0;right:0;padding:.75rem;cursor:pointer;line-height:1;z-index:1000;border:none;background-color:transparent}header.is-sticky .header__toggle svg{stroke:#282828}header.is-sticky .header__toggle span:first-of-type{display:block}header.is-sticky .header__toggle span:last-of-type{display:none}header.is-sticky .header__toggle.is-visible span:first-of-type{display:none}header.is-sticky .header__toggle.is-visible span:last-of-type{display:block}header.is-sticky .header__toggle.is-visible span svg{stroke:#f4f4f4}header.is-sticky .header__menu{position:fixed;top:0;right:0;transform:translateX(100%);height:100vh;width:100%;max-width:30rem;padding:1rem 1.5rem;background-color:#282828;color:#f4f4f4;z-index:1000;transition:transform 200ms ease-in-out}@media only screen and (min-width:30em){header.is-sticky .header__menu{border-left:1px solid #5b5b5b}}header.is-sticky .header__menu.is-visible{transform:translateX(0)}header.is-sticky .header__menu a{color:#f4f4f4;border-bottom:1px solid #f4f4f4}header.is-sticky .header__menu a:hover{color:#c9c9c9}header.is-sticky .header__menu .menu__links{display:flex;flex-wrap:wrap;flex-direction:row}@media only screen and (min-width:40em){header.is-sticky .header__menu .menu__links{flex-direction:column}}header.is-sticky .header__menu .menu__links li{font-family:'National 2 Narrow Web',Helvetica,Arial,sans-serif;font-weight:700;text-transform:uppercase;margin-bottom:.5em;margin-right:.5em;font-size:20px}@media only screen and (min-width:30em){header.is-sticky .header__menu .menu__links li{font-size:24px}}header.is-sticky .header__menu a.patreon-link{font-family:'National 2 Narrow Web',Helvetica,Arial,sans-serif;font-weight:700;text-transform:uppercase;border:none;background-color:#f4f4f4;color:#282828;padding:.5em .75em}header.is-sticky .header__menu a.patreon-link:hover{opacity:.75}header.is-sticky .menu__patrons ul{display:flex;flex-wrap:wrap}header.is-sticky .menu__patrons li:after{display:inline;content:',';margin-right:.25em}header.is-sticky .menu__patrons li:last-of-type:after{content:'.'}header.is-sticky.is-dark{background-color:#282828;box-shadow:0 0 7px 1px #5b5b5b}header.is-sticky.is-dark svg path{fill:#f4f4f4}header.is-sticky.is-dark .header__menu{background-color:#fff;color:#282828}@media only screen and (min-width:30em){header.is-sticky.is-dark .header__menu{border-left:1px solid #c9c9c9}}header.is-sticky.is-dark a{color:#282828;border-bottom:1px solid #282828}header.is-sticky.is-dark a:hover{color:#5b5b5b}header.is-sticky.is-dark .header__toggle svg{stroke:#f4f4f4}header.is-sticky.is-dark .header__toggle.is-visible span svg{stroke:#282828}.intro{margin:0 auto;padding:6rem 1rem 3rem 1rem}.intro__hed{max-width:60rem;margin:0 auto;text-align:center}.intro__dek{max-width:40rem;margin:0 auto;margin-top:1rem;text-align:center}.intro__byline{max-width:40rem;margin:0 auto;margin-top:1rem;text-align:center}.intro__time{display:block;max-width:40rem;margin:0 auto;margin-top:1rem;text-align:center}.graphic-wrapper{position:fixed;top:0;left:0;right:0;margin:0 auto}.graphic-wrapper svg{margin:0 auto;display:block}body{height:100vh}#content{height:100%}.swiper-container{height:100%}.swiper-slide{background:none;display:flex;flex-direction:column;justify-content:flex-end}.swiper-slide p{max-width:500px;margin:0 auto}svg text{font-size:12px;fill:#333}.regression{stroke:#ccc;stroke-dasharray:12px 12px;stroke-width:2px;opacity:.5}.player circle{fill:#aaa;opacity:.75;stroke:#888;stroke-opacity:.5}.axis--x .tick:nth-child(2){display:none}.axis--x .tick:nth-child(7){display:none}.axis--y .tick:nth-child(3){display:none}.axis--y .tick:nth-child(2){display:none}.axis path{display:none}.axis text{fill:#666}.axis line{stroke:#ddd;stroke-dasharray:2px 2px;stroke-opacity:1}.g-vor path{stroke:#ccc}.g-vor .bg{fill:none;stroke-width:3px;stroke:#fff}</style>
+
+	<style>
+		/*
+	        This font software is the property of Commercial Type.
+	
+	        You may not modify the font software, use it on another website, or install it on a computer.
+	
+	        License information is available at http://commercialtype.com/eula
+	        For more information please visit Commercial Type at http://commercialtype.com or email us at info[at]commercialtype.com
+	
+	        Copyright (C) 2017 Schwartzco Inc.
+	        License: 1704-GNCLGK
+	*/
+	
+		/*
+		********************
+			National
+		********************
+		*/
+	
+		@font-face {
+			font-family: 'National 2 Web';
+			src: url('https://pudding.cool/assets/fonts/national/National2Web-Regular.woff2') format('woff2'),
+			url('https://pudding.cool/assets/fonts/national/National2Web-Regular.woff') format('woff');
+			font-weight: 500;
+			font-style: normal;
+			font-stretch: normal;
+			font-display: swap;
+		}
+	
+		@font-face {
+			font-family: 'National 2 Web';
+			src: url('https://pudding.cool/assets/fonts/national/National2Web-Bold.woff2') format('woff2'),
+			url('https://pudding.cool/assets/fonts/national/National2Web-Bold.woff') format('woff');
+			font-weight: 700;
+			font-style: normal;
+			font-stretch: normal;
+			font-display: swap;
+		}
+	
+		/*
+		********************
+			National Narrow
+		********************
+		*/
+	
+		/*
+		@font-face {
+			font-family: 'National 2 Narrow Web';
+			src: url('https://pudding.cool/assets/fonts/national/National2NarrowWeb-Extralight.woff2') format('woff2'),
+			url('https://pudding.cool/assets/fonts/national/National2NarrowWeb-Extralight.woff') format('woff');
+			font-weight: 200;
+			font-style: normal;
+			font-stretch: normal;
+			font-display: swap;
+		}
+		*/
+		
+		@font-face {
+			font-family: 'National 2 Narrow Web';
+			src: url('https://pudding.cool/assets/fonts/national/National2NarrowWeb-Regular.woff2') format('woff2'),
+			url('https://pudding.cool/assets/fonts/national/National2NarrowWeb-Regular.woff') format('woff');
+			font-weight: 500;
+			font-style: normal;
+			font-stretch: normal;
+			font-display: swap;
+		}
+	
+		@font-face {
+			font-family: 'National 2 Narrow Web';
+			src: url('https://pudding.cool/assets/fonts/national/National2NarrowWeb-Bold.woff2') format('woff2'),
+			url('https://pudding.cool/assets/fonts/national/National2NarrowWeb-Bold.woff') format('woff');
+			font-weight: 700;
+			font-style: normal;
+			font-stretch: normal;
+			font-display: swap;
+		}
+	
+		/*
+		@font-face {
+			font-family: 'National 2 Narrow Web';
+			src: url('https://pudding.cool/assets/fonts/national/National2NarrowWeb-Black.woff2') format('woff2'),
+			url('https://pudding.cool/assets/fonts/national/National2NarrowWeb-Black.woff') format('woff');
+			font-weight: 900;
+			font-style: normal;
+			font-stretch: normal;
+			font-display: swap;
+		}
+		*/
+	
+		/*
+		********************
+			Tiempos Text
+		********************
+		*/
+	
+		@font-face {
+			font-family: 'Tiempos Text Web';
+			src: url('https://pudding.cool/assets/fonts/tiempos/TiemposTextWeb-Regular.woff2') format('woff2'),
+			url('https://pudding.cool/assets/fonts/tiempos/TiemposTextWeb-Regular.woff') format('woff');
+			font-weight: 500;
+			font-style: normal;
+			font-stretch: normal;
+			font-display: swap;
+		}
+	
+		@font-face {
+			font-family: 'Tiempos Text Web';
+			src: url('https://pudding.cool/assets/fonts/tiempos/TiemposTextWeb-Bold.woff2') format('woff2'),
+			url('https://pudding.cool/assets/fonts/tiempos/TiemposTextWeb-Bold.woff') format('woff');
+			font-weight: 700;
+			font-style: normal;
+			font-stretch: normal;
+			font-display: swap;
+		}
+	
+		/*
+		********************
+			Tiempos Headline
+		********************
+		*/
+	
+		/*
+		@font-face {
+			font-family: 'Tiempos Headline Web';
+			src: url('https://pudding.cool/assets/fonts/tiempos/TiemposHeadlineWeb-Regular.woff2') format('woff2'),
+			url('https://pudding.cool/assets/fonts/tiempos/TiemposHeadlineWeb-Regular.woff') format('woff');
+			font-weight: 500;
+			font-style: normal;
+			font-stretch: normal;
+			font-display: swap;
+		}
+		*/
+		
+		/*
+		********************
+			Publico Text
+		********************
+		*/
+		/*
+		@font-face {
+			font-family: 'Publico Text Web';
+			src: url('https://pudding.cool/assets/fonts/publico/PublicoText-Roman-Web.woff2') format('woff2'),
+			url('https://pudding.cool/assets/fonts/publico/PublicoText-Roman-Web.woff') format('woff');
+			font-weight: 400;
+			font-style: normal;
+			font-stretch: normal;
+			font-display: swap;
+		}
+	
+		@font-face {
+			font-family: 'Publico Text Web';
+			src: url('https://pudding.cool/assets/fonts/publico/PublicoText-Bold-Web.woff2') format('woff2'),
+			url('https://pudding.cool/assets/fonts/publico/PublicoText-Bold-Web.woff') format('woff');
+			font-weight: 700;
+			font-style: normal;
+			font-stretch: normal;
+			font-display: swap;
+		}
+		*/
+		
+		/*
+		********************
+			Atlas Grotesk
+		********************
+		*/
+	
+		/*
+		@font-face {
+			font-family: 'Atlas Grotesk Web';
+			src: url('https://pudding.cool/assets/fonts/atlas/AtlasGrotesk-Regular-Web.woff2') format('woff2'),
+			url('https://pudding.cool/assets/fonts/atlas/AtlasGrotesk-Regular-Web.woff') format('woff');
+			font-weight: 400;
+			font-style: normal;
+			font-stretch: normal;
+			font-display: swap;
+		}
+	
+		@font-face {
+			font-family: 'Atlas Grotesk Web';
+			src: url('https://pudding.cool/assets/fonts/atlas/AtlasGrotesk-Medium-Web.woff2') format('woff2'),
+			url('https://pudding.cool/assets/fonts/atlas/AtlasGrotesk-Medium-Web.woff') format('woff');
+			font-weight: 500;
+			font-style: normal;
+			font-stretch: normal;
+			font-display: swap;
+		}
+		
+		@font-face {
+			font-family: 'Atlas Grotesk Web';
+			src: url('https://pudding.cool/assets/fonts/atlas/AtlasGrotesk-Bold-Web.woff2') format('woff2'),
+			url('https://pudding.cool/assets/fonts/atlas/AtlasGrotesk-Bold-Web.woff') format('woff');
+			font-weight: 600;
+			font-style: normal;
+			font-stretch: normal;
+			font-display: swap;
+		}
+		*/
+	</style>
+
+	<script>parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcelRequire,u="function"==typeof require&&require;function f(t,n){if(!r[t]){if(!e[t]){var i="function"==typeof parcelRequire&&parcelRequire;if(!n&&i)return i(t,!0);if(o)return o(t,!0);if(u&&"string"==typeof t)return u(t);var c=new Error("Cannot find module '"+t+"'");throw c.code="MODULE_NOT_FOUND",c}p.resolve=function(r){return e[t][1][r]||r},p.cache={};var l=r[t]=new f.Module(t);e[t][0].call(l.exports,p,l,l.exports,this)}return r[t].exports;function p(e){return f(p.resolve(e))}}f.isParcelRequire=!0,f.Module=function(e){this.id=e,this.bundle=f,this.exports={}},f.modules=e,f.cache=r,f.parent=o,f.register=function(r,t){e[r]=[function(e,r){r.exports=t},{}]};for(var c=0;c<t.length;c++)try{f(t[c])}catch(e){i||(i=e)}if(t.length){var l=f(t[t.length-1]);"object"==typeof exports&&"undefined"!=typeof module?module.exports=l:"function"==typeof define&&define.amd?define(function(){return l}):n&&(this[n]=l)}if(parcelRequire=f,i)throw i;return f}({"g1DG":[function(require,module,exports) {
+"use strict";function e(e){var t=this.constructor;return this.then(function(r){return t.resolve(e()).then(function(){return r})},function(r){return t.resolve(e()).then(function(){return t.reject(r)})})}Object.defineProperty(exports,"__esModule",{value:!0}),exports.default=void 0;var t=e;exports.default=t;
+},{}],"gqUM":[function(require,module,exports) {
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.default=void 0;var e=t(require("./finally"));function t(e){return e&&e.__esModule?e:{default:e}}var n=setTimeout;function o(e){return Boolean(e&&void 0!==e.length)}function r(){}function i(e,t){return function(){e.apply(t,arguments)}}function u(e){if(!(this instanceof u))throw new TypeError("Promises must be constructed via new");if("function"!=typeof e)throw new TypeError("not a function");this._state=0,this._handled=!1,this._value=void 0,this._deferreds=[],d(e,this)}function f(e,t){for(;3===e._state;)e=e._value;0!==e._state?(e._handled=!0,u._immediateFn(function(){var n=1===e._state?t.onFulfilled:t.onRejected;if(null!==n){var o;try{o=n(e._value)}catch(r){return void a(t.promise,r)}c(t.promise,o)}else(1===e._state?c:a)(t.promise,e._value)})):e._deferreds.push(t)}function c(e,t){try{if(t===e)throw new TypeError("A promise cannot be resolved with itself.");if(t&&("object"==typeof t||"function"==typeof t)){var n=t.then;if(t instanceof u)return e._state=3,e._value=t,void l(e);if("function"==typeof n)return void d(i(n,t),e)}e._state=1,e._value=t,l(e)}catch(o){a(e,o)}}function a(e,t){e._state=2,e._value=t,l(e)}function l(e){2===e._state&&0===e._deferreds.length&&u._immediateFn(function(){e._handled||u._unhandledRejectionFn(e._value)});for(var t=0,n=e._deferreds.length;t<n;t++)f(e,e._deferreds[t]);e._deferreds=null}function s(e,t,n){this.onFulfilled="function"==typeof e?e:null,this.onRejected="function"==typeof t?t:null,this.promise=n}function d(e,t){var n=!1;try{e(function(e){n||(n=!0,c(t,e))},function(e){n||(n=!0,a(t,e))})}catch(o){if(n)return;n=!0,a(t,o)}}u.prototype.catch=function(e){return this.then(null,e)},u.prototype.then=function(e,t){var n=new this.constructor(r);return f(this,new s(e,t,n)),n},u.prototype.finally=e.default,u.all=function(e){return new u(function(t,n){if(!o(e))return n(new TypeError("Promise.all accepts an array"));var r=Array.prototype.slice.call(e);if(0===r.length)return t([]);var i=r.length;function u(e,o){try{if(o&&("object"==typeof o||"function"==typeof o)){var f=o.then;if("function"==typeof f)return void f.call(o,function(t){u(e,t)},n)}r[e]=o,0==--i&&t(r)}catch(c){n(c)}}for(var f=0;f<r.length;f++)u(f,r[f])})},u.resolve=function(e){return e&&"object"==typeof e&&e.constructor===u?e:new u(function(t){t(e)})},u.reject=function(e){return new u(function(t,n){n(e)})},u.race=function(e){return new u(function(t,n){if(!o(e))return n(new TypeError("Promise.race accepts an array"));for(var r=0,i=e.length;r<i;r++)u.resolve(e[r]).then(t,n)})},u._immediateFn="function"==typeof setImmediate&&function(e){setImmediate(e)}||function(e){n(e,0)},u._unhandledRejectionFn=function(e){"undefined"!=typeof console&&console&&console.warn("Possible Unhandled Promise Rejection:",e)};var h=u;exports.default=h;
+},{"./finally":"g1DG"}],"CRld":[function(require,module,exports) {
+var global = arguments[3];
+var e=arguments[3],r=o(require("./index")),n=o(require("./finally"));function o(e){return e&&e.__esModule?e:{default:e}}var i=function(){if("undefined"!=typeof self)return self;if("undefined"!=typeof window)return window;if(void 0!==e)return e;throw new Error("unable to locate global object")}();"Promise"in i?i.Promise.prototype.finally||(i.Promise.prototype.finally=n.default):i.Promise=r.default;
+},{"./index":"gqUM","./finally":"g1DG"}],"jxGG":[function(require,module,exports) {
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.Headers=a,exports.Request=m,exports.Response=A,exports.fetch=x,exports.DOMException=void 0;var t={searchParams:"URLSearchParams"in self,iterable:"Symbol"in self&&"iterator"in Symbol,blob:"FileReader"in self&&"Blob"in self&&function(){try{return new Blob,!0}catch(t){return!1}}(),formData:"FormData"in self,arrayBuffer:"ArrayBuffer"in self};function e(t){return t&&DataView.prototype.isPrototypeOf(t)}if(t.arrayBuffer)var r=["[object Int8Array]","[object Uint8Array]","[object Uint8ClampedArray]","[object Int16Array]","[object Uint16Array]","[object Int32Array]","[object Uint32Array]","[object Float32Array]","[object Float64Array]"],o=ArrayBuffer.isView||function(t){return t&&r.indexOf(Object.prototype.toString.call(t))>-1};function n(t){if("string"!=typeof t&&(t=String(t)),/[^a-z0-9\-#$%&'*+.^_`|~]/i.test(t))throw new TypeError("Invalid character in header field name");return t.toLowerCase()}function s(t){return"string"!=typeof t&&(t=String(t)),t}function i(e){var r={next:function(){var t=e.shift();return{done:void 0===t,value:t}}};return t.iterable&&(r[Symbol.iterator]=function(){return r}),r}function a(t){this.map={},t instanceof a?t.forEach(function(t,e){this.append(e,t)},this):Array.isArray(t)?t.forEach(function(t){this.append(t[0],t[1])},this):t&&Object.getOwnPropertyNames(t).forEach(function(e){this.append(e,t[e])},this)}function h(t){if(t.bodyUsed)return Promise.reject(new TypeError("Already read"));t.bodyUsed=!0}function u(t){return new Promise(function(e,r){t.onload=function(){e(t.result)},t.onerror=function(){r(t.error)}})}function f(t){var e=new FileReader,r=u(e);return e.readAsArrayBuffer(t),r}function d(t){var e=new FileReader,r=u(e);return e.readAsText(t),r}function l(t){for(var e=new Uint8Array(t),r=new Array(e.length),o=0;o<e.length;o++)r[o]=String.fromCharCode(e[o]);return r.join("")}function c(t){if(t.slice)return t.slice(0);var e=new Uint8Array(t.byteLength);return e.set(new Uint8Array(t)),e.buffer}function y(){return this.bodyUsed=!1,this._initBody=function(r){this._bodyInit=r,r?"string"==typeof r?this._bodyText=r:t.blob&&Blob.prototype.isPrototypeOf(r)?this._bodyBlob=r:t.formData&&FormData.prototype.isPrototypeOf(r)?this._bodyFormData=r:t.searchParams&&URLSearchParams.prototype.isPrototypeOf(r)?this._bodyText=r.toString():t.arrayBuffer&&t.blob&&e(r)?(this._bodyArrayBuffer=c(r.buffer),this._bodyInit=new Blob([this._bodyArrayBuffer])):t.arrayBuffer&&(ArrayBuffer.prototype.isPrototypeOf(r)||o(r))?this._bodyArrayBuffer=c(r):this._bodyText=r=Object.prototype.toString.call(r):this._bodyText="",this.headers.get("content-type")||("string"==typeof r?this.headers.set("content-type","text/plain;charset=UTF-8"):this._bodyBlob&&this._bodyBlob.type?this.headers.set("content-type",this._bodyBlob.type):t.searchParams&&URLSearchParams.prototype.isPrototypeOf(r)&&this.headers.set("content-type","application/x-www-form-urlencoded;charset=UTF-8"))},t.blob&&(this.blob=function(){var t=h(this);if(t)return t;if(this._bodyBlob)return Promise.resolve(this._bodyBlob);if(this._bodyArrayBuffer)return Promise.resolve(new Blob([this._bodyArrayBuffer]));if(this._bodyFormData)throw new Error("could not read FormData body as blob");return Promise.resolve(new Blob([this._bodyText]))},this.arrayBuffer=function(){return this._bodyArrayBuffer?h(this)||Promise.resolve(this._bodyArrayBuffer):this.blob().then(f)}),this.text=function(){var t=h(this);if(t)return t;if(this._bodyBlob)return d(this._bodyBlob);if(this._bodyArrayBuffer)return Promise.resolve(l(this._bodyArrayBuffer));if(this._bodyFormData)throw new Error("could not read FormData body as text");return Promise.resolve(this._bodyText)},t.formData&&(this.formData=function(){return this.text().then(w)}),this.json=function(){return this.text().then(JSON.parse)},this}a.prototype.append=function(t,e){t=n(t),e=s(e);var r=this.map[t];this.map[t]=r?r+", "+e:e},a.prototype.delete=function(t){delete this.map[n(t)]},a.prototype.get=function(t){return t=n(t),this.has(t)?this.map[t]:null},a.prototype.has=function(t){return this.map.hasOwnProperty(n(t))},a.prototype.set=function(t,e){this.map[n(t)]=s(e)},a.prototype.forEach=function(t,e){for(var r in this.map)this.map.hasOwnProperty(r)&&t.call(e,this.map[r],r,this)},a.prototype.keys=function(){var t=[];return this.forEach(function(e,r){t.push(r)}),i(t)},a.prototype.values=function(){var t=[];return this.forEach(function(e){t.push(e)}),i(t)},a.prototype.entries=function(){var t=[];return this.forEach(function(e,r){t.push([r,e])}),i(t)},t.iterable&&(a.prototype[Symbol.iterator]=a.prototype.entries);var p=["DELETE","GET","HEAD","OPTIONS","POST","PUT"];function b(t){var e=t.toUpperCase();return p.indexOf(e)>-1?e:t}function m(t,e){var r=(e=e||{}).body;if(t instanceof m){if(t.bodyUsed)throw new TypeError("Already read");this.url=t.url,this.credentials=t.credentials,e.headers||(this.headers=new a(t.headers)),this.method=t.method,this.mode=t.mode,this.signal=t.signal,r||null==t._bodyInit||(r=t._bodyInit,t.bodyUsed=!0)}else this.url=String(t);if(this.credentials=e.credentials||this.credentials||"same-origin",!e.headers&&this.headers||(this.headers=new a(e.headers)),this.method=b(e.method||this.method||"GET"),this.mode=e.mode||this.mode||null,this.signal=e.signal||this.signal,this.referrer=null,("GET"===this.method||"HEAD"===this.method)&&r)throw new TypeError("Body not allowed for GET or HEAD requests");this._initBody(r)}function w(t){var e=new FormData;return t.trim().split("&").forEach(function(t){if(t){var r=t.split("="),o=r.shift().replace(/\+/g," "),n=r.join("=").replace(/\+/g," ");e.append(decodeURIComponent(o),decodeURIComponent(n))}}),e}function v(t){var e=new a;return t.replace(/\r?\n[\t ]+/g," ").split(/\r?\n/).forEach(function(t){var r=t.split(":"),o=r.shift().trim();if(o){var n=r.join(":").trim();e.append(o,n)}}),e}function A(t,e){e||(e={}),this.type="default",this.status=void 0===e.status?200:e.status,this.ok=this.status>=200&&this.status<300,this.statusText="statusText"in e?e.statusText:"OK",this.headers=new a(e.headers),this.url=e.url||"",this._initBody(t)}m.prototype.clone=function(){return new m(this,{body:this._bodyInit})},y.call(m.prototype),y.call(A.prototype),A.prototype.clone=function(){return new A(this._bodyInit,{status:this.status,statusText:this.statusText,headers:new a(this.headers),url:this.url})},A.error=function(){var t=new A(null,{status:0,statusText:""});return t.type="error",t};var _=[301,302,303,307,308];A.redirect=function(t,e){if(-1===_.indexOf(e))throw new RangeError("Invalid status code");return new A(null,{status:e,headers:{location:t}})};var E=self.DOMException;exports.DOMException=E;try{new E}catch(g){exports.DOMException=E=function(t,e){this.message=t,this.name=e;var r=Error(t);this.stack=r.stack},E.prototype=Object.create(Error.prototype),E.prototype.constructor=E}function x(e,r){return new Promise(function(o,n){var s=new m(e,r);if(s.signal&&s.signal.aborted)return n(new E("Aborted","AbortError"));var i=new XMLHttpRequest;function a(){i.abort()}i.onload=function(){var t={status:i.status,statusText:i.statusText,headers:v(i.getAllResponseHeaders()||"")};t.url="responseURL"in i?i.responseURL:t.headers.get("X-Request-URL");var e="response"in i?i.response:i.responseText;o(new A(e,t))},i.onerror=function(){n(new TypeError("Network request failed"))},i.ontimeout=function(){n(new TypeError("Network request failed"))},i.onabort=function(){n(new E("Aborted","AbortError"))},i.open(s.method,s.url,!0),"include"===s.credentials?i.withCredentials=!0:"omit"===s.credentials&&(i.withCredentials=!1),"responseType"in i&&t.blob&&(i.responseType="blob"),s.headers.forEach(function(t,e){i.setRequestHeader(e,t)}),s.signal&&(s.signal.addEventListener("abort",a),i.onreadystatechange=function(){4===i.readyState&&s.signal.removeEventListener("abort",a)}),i.send(void 0===s._bodyInit?null:s._bodyInit)})}x.polyfill=!0,self.fetch||(self.fetch=x,self.Headers=a,self.Request=m,self.Response=A);
+},{}],"HV51":[function(require,module,exports) {
+String.prototype.startsWith||(String.prototype.startsWith=function(t,r){return this.substr(r||0,t.length)===t});
+},{}],"myV9":[function(require,module,exports) {
+String.prototype.endsWith||(String.prototype.endsWith=function(t,n){var e=this.toString();("number"!=typeof n||!isFinite(n)||Math.floor(n)!==n||n>e.length)&&(n=e.length),n-=t.length;var r=e.lastIndexOf(t,n);return-1!==r&&r===n});
+},{}],"ke9W":[function(require,module,exports) {
+Array.prototype.findIndex||Object.defineProperty(Array.prototype,"findIndex",{value:function(e){"use strict";if(null==this)throw new TypeError("Array.prototype.findIndex called on null or undefined");if("function"!=typeof e)throw new TypeError("predicate must be a function");for(var r,n=Object(this),t=n.length>>>0,o=arguments[1],i=0;i<t;i++)if(r=n[i],e.call(o,r,i,n))return i;return-1},enumerable:!1,configurable:!1,writable:!1});
+},{}],"tX5J":[function(require,module,exports) {
+Array.prototype.find||Object.defineProperty(Array.prototype,"find",{value:function(r){"use strict";if(null==this)throw new TypeError("Array.prototype.find called on null or undefined");if("function"!=typeof r)throw new TypeError("predicate must be a function");for(var e,t=Object(this),n=t.length>>>0,o=arguments[1],i=0;i<n;i++)if(e=t[i],r.call(o,e,i,t))return e}});
+},{}],"qGlD":[function(require,module,exports) {
+Array.prototype.includes||Object.defineProperty(Array.prototype,"includes",{value:function(r,t){if(null==this)throw new TypeError('"this" is null or not defined');var e=Object(this),n=e.length>>>0;if(0===n)return!1;for(var i=0|t,o=Math.max(i>=0?i:n-Math.abs(i),0);o<n;){if(e[o]===r)return!0;o++}return!1}});
+},{}],"gRIw":[function(require,module,exports) {
+"use strict";require("promise-polyfill/src/polyfill"),require("whatwg-fetch"),require("./polyfills/startsWith"),require("./polyfills/endsWith"),require("./polyfills/findIndex"),require("./polyfills/find"),require("./polyfills/includes");
+},{"promise-polyfill/src/polyfill":"CRld","whatwg-fetch":"jxGG","./polyfills/startsWith":"HV51","./polyfills/endsWith":"myV9","./polyfills/findIndex":"ke9W","./polyfills/find":"tX5J","./polyfills/includes":"qGlD"}]},{},["gRIw"], null)</script>
+
+	<script>
+	
+	</script>	<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+
+</head>
+
+<body>
+
+	<main id='content'>
+
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+					<div class="swiper-slide" data-year='2001'>
+						<!-- 
+							<img inline class='' src='activity.svg'>
+						 -->
+						<div class="">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>	
+						</div>
+		
+					</div>
+					<div class="swiper-slide" data-year='2002'>
+						<!--  -->
+						<div class="">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>	
+						</div>
+		
+					</div>
+					<div class="swiper-slide" data-year='2003'>
+						<!--  -->
+						<div class="">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>	
+						</div>
+		
+					</div>
+					<div class="swiper-slide" data-year='2004'>
+						<!--  -->
+						<div class="">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>	
+						</div>
+		
+					</div>
+					<div class="swiper-slide" data-year='2005'>
+						<!--  -->
+						<div class="">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>	
+						</div>
+		
+					</div>
+			</div>
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
+		</div>
+		<div class="graphic-wrapper">
+		
+		</div>
+
+	</main>
+
+	<!-- <footer class='pudding-footer'>
+
+	<div class='footer-recirc'>
+		<div class='footer-recirc__articles'></div>
+	</div>
+
+	<div class='footer-company'>
+		<div class='footer-company__cta'>
+			<ul class='footer-company__cta-list'>
+				<li>
+					<a href='https://facebook.com/pudding.viz/'>
+						<img inline src='pudding/facebook.svg'>
+						<p>FACEBOOK</p>
+					</a>
+				</li>
+				<li>
+					<a href='https://twitter.com/puddingviz/'>
+						<img inline src='pudding/twitter.svg'>
+						<p>TWITTER</p>
+					</a>
+				</li>
+				<li>
+					<a href='https://www.instagram.com/the.pudding'>
+						<img inline src='pudding/instagram.svg'>
+						<p>INSTAGRAM</p>
+					</a>
+				</li>
+				<li>
+					<a href='https://patreon.com/thepudding/'>
+						<img inline src='pudding/patreon.svg'>
+						<p>PATREON</p>
+					</a>
+				</li>
+				<li>
+					<a href='https://pudding.cool/about'>
+						<img inline src='pudding/info.svg'>
+						<p>ABOUT</p>
+					</a>
+				</li>
+				<li>
+					<a href='https://pudding.cool/privacy/'>
+						<img inline src='lock.svg'>
+						<p>PRIVACY</p>
+					</a>
+				</li>
+				<li>
+					<a href='http://eepurl.com/czym6f'>
+						<img inline src='pudding/mail.svg'>
+						<p>NEWSLETTER</p>
+					</a>
+				</li>
+				<li>
+					<a href='https://pudding.cool/feed/index.xml'>
+						<img inline src='rss.svg'>
+						<p>RSS</p>
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		<div class='footer-company__about'>
+			<img inline src='pudding/wordmark.svg'>
+			<p class='footer-company__description'><a href='https://pudding.cool'>The Pudding</a> is a digital publication
+				that
+				explains ideas debated in culture with visual essays.</p>
+			<p class='footer-company__trademark'>The Pudding<span>®</span> is made in Brooklyn, NY; Seattle, WA; San Antonio,
+				TX; and Great
+				Barrington, MA.</p>
+		</div>
+
+	</div>
+</footer>
+ -->
+
+
+	<script src='https://pudding.cool/assets/scripts/d3.v5.11.0.min.js'></script>
+	<script src='main.js?version=1570507347354' async></script>
+</body>
+
+</html>
