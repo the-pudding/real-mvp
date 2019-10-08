@@ -1,1 +1,82 @@
 /* CUSTOM STORY STYLE */
+
+
+.graphic-wrapper
+  position fixed
+  top 0px
+  left 0px
+  right 0px
+  margin 0 auto
+  svg
+    margin 0 auto
+    display block
+
+body
+  height 100vh
+#content
+  height 100%
+
+.swiper-container
+  height 100%
+
+.swiper-slide
+  background none
+  display flex
+  flex-direction column
+  justify-content flex-end
+  p
+    max-width 500px
+    margin 0 auto
+
+svg text
+  font-size 12px
+  fill #333
+
+.regression
+  stroke #ccc
+  stroke-dasharray 12px 12px
+  stroke-width 2px
+  opacity 0.5
+
+.player circle
+  fill #aaa
+  opacity 0.75
+  stroke #888
+  stroke-opacity 0.5
+
+.axis--x
+  .tick
+    &:nth-child(2)
+      display none
+    &:nth-child(7)
+      display none
+
+.axis--y
+  .tick
+    &:nth-child(3)
+      display none
+    &:nth-child(2)
+      display none
+.axis
+  path
+    display none
+
+.axis
+  text
+    fill #666
+
+.axis
+  line
+    stroke #ddd
+    stroke-dasharray 2px 2px
+    stroke-opacity 1
+
+.g-vor
+  path
+    stroke #ccc
+
+.g-vor
+  .bg
+    fill none
+    stroke-width 3px
+    stroke #fff

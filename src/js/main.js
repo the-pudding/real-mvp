@@ -3,9 +3,9 @@ import debounce from 'lodash.debounce';
 import isMobile from './utils/is-mobile';
 import graphic from './graphic';
 import footer from './footer';
+import loadData from './load-data'
 
 const $body = d3.select('body');
-let previousWidth = 0;
 
 function resize() {
   // only do resize on width changes, not height
@@ -36,11 +36,16 @@ function init() {
   // setup resize event
   window.addEventListener('resize', debounce(resize, 150));
   // setup sticky header menu
-  setupStickyHeader();
+  // setupStickyHeader();
   // kick off graphic code
-  graphic.init();
+
+  loadData(['nba-seasons--2019.csv','nba-players--2019.csv','inflation-2018.csv']).then(result => {
+    graphic.init(result);
+  }).catch(console.error);
+
+
   // load footer stories
-  footer.init();
+  // footer.init();
 }
 
 init();

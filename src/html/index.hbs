@@ -13,22 +13,19 @@
 	<script inline src='head.js'></script>
 
 	{{> base/analytics }}
+	<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
 
 </head>
 
 <body>
 
-	{{> base/header 'sticky'}}
-
 	<main id='content'>
 
 		{{> story/intro }}
-		{{!-- delete guide and put your html here --}}
-		{{> base/guide }}
 
 	</main>
 
-	{{> base/footer }}
+	<!-- {{> base/footer }} -->
 
 
 	<script src='{{basepath}}assets/scripts/d3.v5.11.0.min.js'></script>
