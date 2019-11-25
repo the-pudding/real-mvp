@@ -1,20 +1,170 @@
-/* CUSTOM STORY STYLE */
+.year-text
+  font-family Monument Extended
+  font-size 64px
+  fill white
+  letter-spacing 0.3rem
+  z-index 1000000
+  opacity .4
 
+.hide-ratio
+  .regression
+    display none
+
+body
+  background #022A3A
+  color white
+  font-family Atlas Grotesk
+  cursor url('assets/images/rect.png'), auto
+  .grid
+    background-image url('assets/images/grid.png')
+    content ''
+    position absolute
+    top 0px
+    left 0px
+    background-repeat repeat
+    width 100%
+    height 100%
+    filter blur(.15px)
+    background-blend-mode luminosity
+    opacity .4
+    background-size 15px
+    pointer-events none
+    z-index 100000000
+
+.blob
+  width 50px
+  height 50px
+  left -25px
+  top -25px
+  position absolute
+  z-index 10000000000
+  mix-blend-mode difference
+  pointer-events none
+  .blob-element
+    background #cee6bf
+    border-radius 50%
+    width 100%
+    height 100%
+    pointer-events none
+    //display none
+    animation-name bounce
+    animation-iteration-count infinite
+    animation-delay 0
+    animation-duration .4s
+    time-function linear
+    animation-direction alternate
+
+
+@-webkit-keyframes bounce {
+  0% { transform: scaleX(.96) scaleY(1.02); }
+  10% { transform: scaleX(1.03) scaleY(.95); }
+  50% { transform: scaleX(.98) scaleY(1.06); }
+  88% { transform: scaleX(1.02) scaleY(.98); }
+  100% { transform: scaleX(.97) scaleY(1.02); }
+}
+
+.player-line
+  pointer-events none
+  .hover-line
+    fill none
+    stroke white
+    stroke-width 3px
+  text
+    font-size 18px
+    text-anchor middle
+    pointer-events none
+    fill white
+  .player-track-bg
+    stroke #022A3A
+    stroke-width 5px
+  circle
+    fill white
+    stroke #022A3A
+
+.year-slider-wrapper
+  display flex
+  max-width 600px
+  margin 0 auto
+  #year-slider
+    display block
+    width 200px
+    margin-right 40px
+  .year-slider-value
+    font-size 16px
+    margin 0
+    font-family sans
 
 .graphic-wrapper
-  position fixed
-  top 0px
-  left 0px
+  position relative
+  top 2rem
+  left 2rem
   right 0px
   margin 0 auto
+  width 100%
+  height 600px
+  margin-bottom 10rem
+  .left-axis,.bottom-axis
+    pointer-events none
+    margin 0 auto
+    display block
+    position absolute
+    top 0px
+    left 0px
+    right 0px
+  .bottom-axis
+    &:before
+      content 'SALARY'
+      text-transform uppercase
+      font-size 16px
+      position absolute
+      bottom 39px
+      right 0px
+      letter-spacing 2px
+      text-shadow 0px 0px 2px #022a3a, 1px 1px 2px #022a3a, -1px -1px 2px #022a3a, 1px 0px 2px #022a3a, 0px 1px 2px #022a3a, -1px 0px 2px #022a3a, 0px -1px 2px #022a3a, -1px 1px 2px #022a3a, 1px -1px 2px #022a3a
+      font-family Monument Extended
+    &:after
+      content 'inflation adjusted'
+      font-size 14px
+      position absolute
+      bottom 21px
+      right -20px
+      text-shadow 0px 0px 2px #022a3a, 1px 1px 2px #022a3a, -1px -1px 2px #022a3a, 1px 0px 2px #022a3a, 0px 1px 2px #022a3a, -1px 0px 2px #022a3a, 0px -1px 2px #022a3a, -1px 1px 2px #022a3a, 1px -1px 2px #022a3a
+      font-family Atlas Grotesk
+      color rgba(255,255,255,.58)
+      margin-left 5px
+      margin-top 2px
+  .left-axis
+    &:before
+      content 'Production'
+      text-transform uppercase
+      font-size 16px
+      letter-spacing 2px
+      text-shadow 0px 0px 2px #022a3a, 1px 1px 2px #022a3a, -1px -1px 2px #022a3a, 1px 0px 2px #022a3a, 0px 1px 2px #022a3a, -1px 0px 2px #022a3a, 0px -1px 2px #022a3a, -1px 1px 2px #022a3a, 1px -1px 2px #022a3a
+      font-family Monument Extended
+    &:after
+      content 'VORP'
+      text-transform uppercase
+      font-size 16px
+      letter-spacing 2px
+      text-shadow 0px 0px 2px #022a3a, 1px 1px 2px #022a3a, -1px -1px 2px #022a3a, 1px 0px 2px #022a3a, 0px 1px 2px #022a3a, -1px 0px 2px #022a3a, 0px -1px 2px #022a3a, -1px 1px 2px #022a3a, 1px -1px 2px #022a3a
+      font-family Atlas Grotesk
+      color rgba(255,255,255,.58)
+      margin-left 5px
+      margin-top 2px
+
+
   svg
     margin 0 auto
     display block
+    overflow visible
+
+
 
 body
   height 100vh
 #content
   height 100%
+  padding-top 2rem
 
 .swiper-container
   height 100%
@@ -29,8 +179,11 @@ body
     margin 0 auto
 
 svg text
-  font-size 12px
+  font-size 25px
   fill #333
+  letter-spacing -1px
+  font-weight 500
+  user-select none
 
 .regression
   stroke #ccc
@@ -40,9 +193,9 @@ svg text
 
 .player circle
   fill #aaa
-  opacity 0.75
-  stroke #888
-  stroke-opacity 0.5
+  opacity 1
+  //stroke #888
+  //stroke-opacity 0.5
 
 .axis--x
   .tick
@@ -58,25 +211,36 @@ svg text
     &:nth-child(2)
       display none
 .axis
-  path
+  .tick
+    text
+      font-family Atlas Grotesk
+      font-weight 500
+      font-size 15px
+  .domain
     display none
 
-.axis
+.g-axis
+  .axis-line
+    stroke-width 5px
   text
-    fill #666
+    fill white
 
 .axis
   line
     stroke #ddd
     stroke-dasharray 2px 2px
     stroke-opacity 1
+    display none
 
 .g-vor
   path
-    stroke #ccc
+    stroke rgba(255,255,255,.5)
 
 .g-vor
+  .fg
+    fill white
   .bg
-    fill none
+    fill #022A3A
     stroke-width 3px
-    stroke #fff
+    stroke #022A3A
+    //display none

@@ -39,7 +39,7 @@ function init() {
   // setupStickyHeader();
   // kick off graphic code
 
-  loadData(['nba-seasons--2019.csv','nba-players--2019.csv','inflation-2018.csv']).then(result => {
+  loadData(['nba-seasons--2019_1.csv','nba-players--2019.csv','inflation-2019.csv']).then(result => {
     graphic.init(result);
   }).catch(console.error);
 
