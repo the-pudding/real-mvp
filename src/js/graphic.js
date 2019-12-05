@@ -66,6 +66,7 @@ let mvps = {
 var mvpStrings = ["2019-Giannis Antetokounmpo", "2018-James Harden", "2017-Russell Westbrook", "2016-Stephen Curry", "2015-Stephen Curry", "2014-Kevin Durant", "2013-LeBron James", "2012-LeBron James", "2011-Derrick Rose", "2010-LeBron James", "2009-LeBron James", "2008-Kobe Bryant", "2007-Dirk Nowitzki", "2006-Steve Nash", "2005-Steve Nash", "2004-Kevin Garnett", "2003-Tim Duncan", "2002-Tim Duncan", "2001-Allen Iverson", "2000-Shaquille O'Neal", "1999-Karl Malone", "1998-Michael Jordan", "1997-Karl Malone", "1996-Michael Jordan", "1995-David Robinson", "1994-Hakeem Olajuwon", "1993-Charles Barkley", "1992-Michael Jordan", "1991-Michael Jordan", "1990-Magic Johnson", "1989-Magic Johnson", "1988-Michael Jordan"];
 
 var viewportHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+var viewportWidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
 let playerNestedData = null;
 let activeYear = null;
 let allPlayerChecked = false;
@@ -85,8 +86,11 @@ let topPlayerData = null;
 let stat = "WS";
 let rescaleX = false;
 let margin = 60;
-let width = Math.floor(viewportHeight*.7) - margin*1.5;
-let height = Math.floor(viewportHeight*.7) - margin;
+if(viewportWidth < 666){
+  margin = 0
+}
+let width = Math.min(Math.floor(viewportWidth*.7) - margin*1.5,666);
+let height = Math.min(Math.floor(viewportWidth*.7) - margin*1.5,666);
 let maxRadius = 16;
 let maxYear = 2019;
 let minYear = 1988;
@@ -153,6 +157,9 @@ function getTopPlayerData(){
   })
 
   yearPlayerData.sort((a,b) => d3.descending(a[stat], b[stat]));
+  for (var person in yearPlayerData){
+    yearPlayerData[person].vorp_rank = person;
+  }
   yearPlayerData = yearPlayerData.slice(0, topPerf);
 
   let unionData = lodash.unionBy(yearPlayerData, yearSalaryData, 'bbrID');
@@ -384,7 +391,7 @@ function buildFrame(){
 
   yearText = svg.append("text")
     .attr("class","year-text")
-    .attr("x",484.7)
+    .attr("x","50%")
     .attr("y",30)
     ;
 

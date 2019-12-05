@@ -1,7 +1,19 @@
+
+{{> base/header }}
+
 <div class="grid">
 
 </div>
+<h1 class="">
+  Finding the Worst, Highest-Paid NBA Player, Ever
+</h1>
+<p class="by-line">by <a href="https://pudding.cool/author/matt-daniels/">Matt Daniels</a></p>
 
+<div class="iframe-wrapper">
+  <div class="second-iframe">
+    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/a_wEZyNZtYE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+</div>
 <!-- <div class="swiper-container">
 	<div class="swiper-wrapper">
 		{{#each prose.slides}}
@@ -18,30 +30,33 @@
 </div> -->
 <div class="graphic-wrapper">
 </div>
-<div class="year-slider-wrapper">
-  <div id="year-slider">
-  </div>
-  <p class="year-slider-value">
-  </p>
-</div>
 
-<form class="stat-chooser">
-  <input  type='radio' value="VORP" name="mode" checked>VORP</input>
-  <input type='radio' value="WS" name="mode">WS</input>
-	<input type='radio' value="PER" name="mode">PER</input>
-  <input type='radio' value="WS/48" name="mode">WS/48</input>
-  <input type='radio' value="BPM" name="mode">BPM</input>
-</form>
-<div class="all-chooser">
-  <input type="checkbox" id="all-players"> All Players
-</div>
-<div class="all-chooser">
-  <input type="checkbox" id="rescale-x"> rescale x-axis
-</div>
-<div class="all-chooser">
-  <input type="checkbox" id="limit-players"> limit players
-</div>
-<div class="player-chooser">
-  <select class="player-chooser-select" name="">
-  </select>
+
+<div class="bottom-elements">
+  <div class="year-slider-wrapper">
+    <div id="year-slider">
+    </div>
+    <p class="year-slider-value">
+    </p>
+  </div>
+  <form class="stat-chooser no-ui-element">
+    <input  type='radio' value="VORP" name="mode" checked>VORP</input>
+    <input type='radio' value="WS" name="mode">WS</input>
+  	<input type='radio' value="PER" name="mode">PER</input>
+    <input type='radio' value="WS/48" name="mode">WS/48</input>
+    <input type='radio' value="BPM" name="mode">BPM</input>
+  </form>
+  <div class="all-chooser">
+    <input type="checkbox" id="all-players"> All Players
+  </div>
+  <div class="all-chooser no-ui-element">
+    <input type="checkbox" id="rescale-x"> rescale x-axis
+  </div>
+  <div class="all-chooser no-ui-element">
+    <input type="checkbox" id="limit-players"> limit players
+  </div>
+  <div class="player-chooser no-ui-element">
+    <select class="player-chooser-select" name="">
+    </select>
+  </div>
 </div>

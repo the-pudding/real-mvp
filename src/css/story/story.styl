@@ -1,20 +1,77 @@
+.by-line
+  text-align center
+  font-size 14px
+  a
+    color white
+    font-family 'Atlas Grotesk Web'
+    border-bottom 1px solid white
+
+    &:visited
+      color white
+      border-bottom 1px solid white
+
+
+
+.iframe-wrapper
+  background #022b3a
+  position relative
+  z-index 1000000000000000
+  padding-top 1rem
+  padding-bottom 1rem
+  margin-bottom 100px
+  .second-iframe
+    width 90%
+    max-width 1000px
+    margin 0 auto
+    height 70vh
+    max-height 600px
+    iframe
+      margin 0 auto
+      display block
+
+h1
+  font-family 'Atlas Grotesk Web'
+  font-size calc(4vw + 1vh + .5vmin)
+  text-align center
+  margin 0 auto
+  margin-bottom 100px
+  margin-top 100px
+  width 95%
+  font-weight 100
+
+
 .year-text
-  font-family Monument Extended
+  font-family 'Atlas Grotesk Web'
   font-size 64px
   fill white
-  letter-spacing 0.3rem
   z-index 1000000
   opacity .4
+  font-weight 900
+  alignment-baseline central
+  dominant-baseline central
 
 .hide-ratio
   .regression
     display none
-
+.no-ui
+  .blob
+    display none
+  .no-ui-element
+    display none
+  .stat-chooser
+    display none
+  #rescale-x
+    display none
 body
   background #022A3A
   color white
-  font-family Atlas Grotesk
-  cursor url('assets/images/rect.png'), auto
+  font-family 'Atlas Grotesk Web'
+  //cursor url('assets/images/rect.png'), auto
+  header
+    background none
+    svg
+      fill white
+
   .grid
     background-image url('assets/images/grid.png')
     content ''
@@ -81,10 +138,19 @@ body
     fill white
     stroke #022A3A
 
+.bottom-elements
+  display flex
+  justify-content center
+  flex-wrap wrap
+  width 95%
+  margin 0 auto
+  margin-top 70px
 .year-slider-wrapper
   display flex
   max-width 600px
-  margin 0 auto
+  margin 0
+  margin-right 30px
+  margin-bottom 30px
   #year-slider
     display block
     width 200px
@@ -92,17 +158,14 @@ body
   .year-slider-value
     font-size 16px
     margin 0
-    font-family sans
+    font-family 'Atlas Grotesk Web'
+    margin-top -3px
 
 .graphic-wrapper
   position relative
-  top 2rem
-  left 2rem
-  right 0px
   margin 0 auto
   width 100%
-  height 600px
-  margin-bottom 10rem
+  margin-bottom 30px
   .left-axis,.bottom-axis
     pointer-events none
     margin 0 auto
@@ -121,7 +184,7 @@ body
       right 0px
       letter-spacing 2px
       text-shadow 0px 0px 2px #022a3a, 1px 1px 2px #022a3a, -1px -1px 2px #022a3a, 1px 0px 2px #022a3a, 0px 1px 2px #022a3a, -1px 0px 2px #022a3a, 0px -1px 2px #022a3a, -1px 1px 2px #022a3a, 1px -1px 2px #022a3a
-      font-family Monument Extended
+      font-family 'Atlas Grotesk Web'
     &:after
       content 'inflation adjusted'
       font-size 14px
@@ -129,7 +192,7 @@ body
       bottom 21px
       right -20px
       text-shadow 0px 0px 2px #022a3a, 1px 1px 2px #022a3a, -1px -1px 2px #022a3a, 1px 0px 2px #022a3a, 0px 1px 2px #022a3a, -1px 0px 2px #022a3a, 0px -1px 2px #022a3a, -1px 1px 2px #022a3a, 1px -1px 2px #022a3a
-      font-family Atlas Grotesk
+      font-family 'Atlas Grotesk Web'
       color rgba(255,255,255,.58)
       margin-left 5px
       margin-top 2px
@@ -140,14 +203,14 @@ body
       font-size 16px
       letter-spacing 2px
       text-shadow 0px 0px 2px #022a3a, 1px 1px 2px #022a3a, -1px -1px 2px #022a3a, 1px 0px 2px #022a3a, 0px 1px 2px #022a3a, -1px 0px 2px #022a3a, 0px -1px 2px #022a3a, -1px 1px 2px #022a3a, 1px -1px 2px #022a3a
-      font-family Monument Extended
+      font-family 'Atlas Grotesk Web'
     &:after
       content 'VORP'
       text-transform uppercase
       font-size 16px
       letter-spacing 2px
       text-shadow 0px 0px 2px #022a3a, 1px 1px 2px #022a3a, -1px -1px 2px #022a3a, 1px 0px 2px #022a3a, 0px 1px 2px #022a3a, -1px 0px 2px #022a3a, 0px -1px 2px #022a3a, -1px 1px 2px #022a3a, 1px -1px 2px #022a3a
-      font-family Atlas Grotesk
+      font-family 'Atlas Grotesk Web'
       color rgba(255,255,255,.58)
       margin-left 5px
       margin-top 2px
@@ -160,11 +223,10 @@ body
 
 
 
-body
-  height 100vh
 #content
   height 100%
   padding-top 2rem
+  position relative
 
 .swiper-container
   height 100%
@@ -179,7 +241,7 @@ body
     margin 0 auto
 
 svg text
-  font-size 25px
+  font-size 14px
   fill #333
   letter-spacing -1px
   font-weight 500
@@ -213,7 +275,7 @@ svg text
 .axis
   .tick
     text
-      font-family Atlas Grotesk
+      font-family 'Atlas Grotesk Web'
       font-weight 500
       font-size 15px
   .domain
