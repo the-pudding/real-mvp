@@ -91,6 +91,10 @@ if(viewportWidth < 666){
 }
 let width = Math.min(Math.floor(viewportWidth*.7) - margin*1.5,666);
 let height = Math.min(Math.floor(viewportWidth*.7) - margin*1.5,666);
+if(viewportWidth > viewportHeight){
+  width = Math.min(Math.floor(viewportHeight*.7) - margin*1.5,666);
+  height = Math.min(Math.floor(viewportHeight*.7) - margin*1.5,666);
+}
 let maxRadius = 16;
 let maxYear = 2019;
 let minYear = 1988;
